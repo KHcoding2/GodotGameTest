@@ -1,0 +1,26 @@
+Genral Rules :
+	Adapt ECS system ( Entity Component System)
+	Keep everyting orgnised
+	Comment code
+	
+	
+	
+	Kheir's Todo list :
+		-
+		-
+		-
+		-
+		-
+		-
+		-
+		
+		
+	Hadla's Todo list :
+		- Add a simple player movement and animation -> DONE
+		-
+		-
+		-
+		-
+		-
+		-
+		
