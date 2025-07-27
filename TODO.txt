@@ -6,7 +6,7 @@ Genral Rules :
 	
 	
 	Kheir's Todo list :
-		-
+		- Integrte ECS to most entities -> Working
 		-
 		-
 		-
@@ -23,5 +23,3 @@ Genral Rules :
 		-
 		-
 		-
-999999
-2050
