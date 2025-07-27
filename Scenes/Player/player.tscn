@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [gd_scene load_steps=26 format=3 uid="uid://bcpv2sdr2pyv2"]
 =======
 [gd_scene load_steps=13 format=3 uid="uid://bcpv2sdr2pyv2"]
 >>>>>>> 525e99146859d121e5af7b85b9b59720ac03f139
+=======
+[gd_scene load_steps=13 format=3 uid="uid://bcpv2sdr2pyv2"]
+>>>>>>> 7605b561438e78d90f62581283e42dd63c8e187d
 
 [ext_resource type="Script" uid="uid://nw6516cdbq14" path="res://Scenes/Player/player.gd" id="1_a3d8c"]
 [ext_resource type="Texture2D" uid="uid://bq6hjxsj4ukeo" path="res://Assets/Player/Character_Idel_Sheet.png" id="2_xpcdj"]
@@ -247,6 +251,7 @@ libraries = {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_dey5f")
 anim_player = NodePath("../AnimationPlayer")
@@ -257,3 +262,6 @@ parameters/Walk/blend_position = Vector2(-0.507246, 0.488341)
 =======
 [node name="HealthComponent" parent="." instance=ExtResource("3_xpcdj")]
 >>>>>>> 525e99146859d121e5af7b85b9b59720ac03f139
+=======
+[node name="HealthComponent" parent="." instance=ExtResource("3_xpcdj")]
+>>>>>>> 7605b561438e78d90f62581283e42dd63c8e187d
