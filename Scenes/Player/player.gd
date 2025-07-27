@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var SPEED = 80
+@export var health : float = 100
 @onready var animations = $AnimationPlayer
 
 func handle_movment():
