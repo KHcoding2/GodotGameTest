@@ -28,6 +28,8 @@ func add_health(amount : float ):
 	if !is_dead and current_health <= max_health:
 		if current_health + amount > max_health:
 			current_health = max_health
+		else :
+			current_health += amount
 
 func regenerate_health(amount : float):
 	pass
