@@ -2,8 +2,7 @@ extends CharacterBody2D
 
 @export var SPEED:int = 80
 @export var health:float = 50
-@onready var animation_tree = $AnimationTree
-#sssssss
+@onready var animation_tree: AnimationTree = $AnimationTree
 
 var moveDirection:Vector2 = Vector2.ZERO
 
