@@ -23,9 +23,7 @@ Genral Rules :
 		-
 		-
 		-
-<<<<<<< HEAD
+
 999999
-=======
 
 2050
->>>>>>> 8d4ed774ec224bd7bbd26b331ad05b7c38ffe706
