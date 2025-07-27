@@ -1,28 +1,29 @@
 extends CharacterBody2D
 
-@export var SPEED = 80
-@export var health : float = 50
-@onready var animations = $AnimationPlayer
+@export var SPEED:int = 80
+@export var health:float = 50
+@onready var animation_tree = $AnimationTree
+
+var moveDirection:Vector2 = Vector2.ZERO
+
+func _ready():
+	animation_tree.active = true
 
 func handle_movment():
-	var moveDirection = Input.get_vector("Left", "Right", "Up", "Down")
+	moveDirection = Input.get_vector("Left", "Right", "Up", "Down").normalized()
 	velocity = moveDirection * SPEED
 
 func update_Animations():
-	var direction = "Down"
-	
-	if velocity.x == 0:
-		if animations.is_playing():
-			animations.stop()
+	if velocity == Vector2.ZERO:
+		animation_tree["parameters/conditions/Idle"] = true
+		animation_tree["parameters/conditions/Is_moving"] = false
 	else:
-		if velocity.x < 0:
-			direction = "Left"
-		elif velocity.x > 0:
-			direction = "Right"
-		elif velocity.y < 0:
-			direction = "Up"
-		
-		animations.play("Idle_" + direction)
+		animation_tree["parameters/conditions/Idle"] = false
+		animation_tree["parameters/conditions/Is_moving"] = true
+	
+	if moveDirection != Vector2.ZERO:
+		animation_tree["parameters/Idle/blend_position"] = moveDirection
+		animation_tree["parameters/Walk/blend_position"] = moveDirection
 
 func _physics_process(delta: float) -> void:
 	handle_movment()
