@@ -7,7 +7,7 @@ Genral Rules :
 	
 	Kheir's Todo list :
 		- Integrte ECS to most entities -> Working
-		-
+		- Create a new branch -> Done
 		-
 		-
 		-
@@ -17,10 +17,9 @@ Genral Rules :
 		
 	Hadla's Todo list :
 		- Add a simple player movement and animation -> DONE
+		- Create a new branch -> Working
 		-
 		-
 		-
 		-
 		-
-		-
-1
