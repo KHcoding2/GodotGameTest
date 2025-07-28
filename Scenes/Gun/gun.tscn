@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://1mqj2vgv7pal"]
+
+[ext_resource type="Texture2D" uid="uid://34dt3pw2pwq5" path="res://Assets/Gun/Gun.png" id="1_goajg"]
+[ext_resource type="Script" uid="uid://duk3trij5c72a" path="res://Scenes/Gun/gun.gd" id="1_k2pme"]
+
+[node name="Gun" type="Node2D"]
+scale = Vector2(0.85, 0.85)
+script = ExtResource("1_k2pme")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4.76837e-07, 0)
+texture = ExtResource("1_goajg")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+visible = false
+position = Vector2(8.57143, -1.42857)

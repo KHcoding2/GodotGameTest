@@ -2,7 +2,11 @@ extends CharacterBody2D
 
 @export var SPEED:int = 80
 @export var health:float = 50
+
 @onready var animation_tree: AnimationTree = $AnimationTree
+@onready var gun: Node2D = $Gun
+@onready var left_hand: Marker2D = $Hands/Left_Hand
+@onready var right_hand: Marker2D = $Hands/Right_Hand
 
 var moveDirection:Vector2 = Vector2.ZERO
 
@@ -12,6 +16,12 @@ func _ready():
 func handle_movment():
 	moveDirection = Input.get_vector("Left", "Right", "Up", "Down").normalized()
 	velocity = moveDirection * SPEED
+
+func handel_gun_pos():
+	if moveDirection.x < 0:
+		gun.global_position = left_hand.global_position
+	elif moveDirection.x > 0:
+		gun.global_position = right_hand.global_position
 
 func update_Animations():
 	if velocity == Vector2.ZERO:
@@ -27,5 +37,6 @@ func update_Animations():
 
 func _physics_process(delta: float) -> void:
 	handle_movment()
+	handel_gun_pos()
 	update_Animations()
 	move_and_slide()

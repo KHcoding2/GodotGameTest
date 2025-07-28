@@ -1,10 +1,11 @@
-[gd_scene load_steps=27 format=3 uid="uid://bcpv2sdr2pyv2"]
+[gd_scene load_steps=28 format=3 uid="uid://bcpv2sdr2pyv2"]
 
-[ext_resource type="Script" uid="uid://nw6516cdbq14" path="res://Scripts/Components/player.gd" id="1_a3d8c"]
+[ext_resource type="Script" uid="uid://nw6516cdbq14" path="res://Scripts/Player/player.gd" id="1_a3d8c"]
 [ext_resource type="Texture2D" uid="uid://bq6hjxsj4ukeo" path="res://Assets/Player/Character_Idel_Sheet.png" id="2_xpcdj"]
+[ext_resource type="PackedScene" uid="uid://1mqj2vgv7pal" path="res://Scenes/Gun/gun.tscn" id="3_xpcdj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a3d8c"]
-size = Vector2(7, 5)
+size = Vector2(6, 5)
 
 [sub_resource type="Animation" id="Animation_cvnsp"]
 resource_name = "Idle_Down"
@@ -233,14 +234,23 @@ transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_a3d8c")
 
+[node name="Hands" type="Node2D" parent="."]
+visible = false
+
+[node name="Right_Hand" type="Marker2D" parent="Hands"]
+position = Vector2(-4, 4)
+
+[node name="Left_Hand" type="Marker2D" parent="Hands"]
+position = Vector2(3, 4)
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_xpcdj")
 hframes = 6
 vframes = 8
-frame = 6
+frame = 36
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 3.5)
+position = Vector2(0, 3.5)
 shape = SubResource("RectangleShape2D_a3d8c")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -257,3 +267,6 @@ parameters/conditions/Idle = false
 parameters/conditions/Is_moving = false
 parameters/Idle/blend_position = Vector2(0.74206, 0.145055)
 parameters/Walk/blend_position = Vector2(-0.507246, 0.488341)
+
+[node name="Gun" parent="." instance=ExtResource("3_xpcdj")]
+position = Vector2(-1, 4)

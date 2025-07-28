@@ -17,9 +17,8 @@ Genral Rules :
 		
 	Hadla's Todo list :
 		- Add a simple player movement and animation -> DONE
-		- Create a new branch -> Working
-		-
-		-
-		-
-		-
-		- Potato
+		- Create a new branch -> DONE
+		- Finish Animations -> DONE
+		- Add working gun with bullets -> DONE
+		- Add ammo system -> DOING
+		- 
