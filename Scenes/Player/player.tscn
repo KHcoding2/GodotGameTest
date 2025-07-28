@@ -1,7 +1,7 @@
 [gd_scene load_steps=26 format=3 uid="uid://bcpv2sdr2pyv2"]
 
 [ext_resource type="Script" uid="uid://nw6516cdbq14" path="res://Scenes/Player/player.gd" id="1_a3d8c"]
-[ext_resource type="Texture2D" uid="uid://bq6hjxsj4ukeo" path="res://Assets/Player/Character_Idel_Sheet.png" id="2_xpcdj"]
+[ext_resource type="Texture2D" uid="uid://bq6hjxsj4ukeo" path="res://Assets/Character_Idel_Sheet.png" id="2_xpcdj"]
 
 [sub_resource type="Animation" id="Animation_cvnsp"]
 resource_name = "Idle_Down"
