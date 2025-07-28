@@ -249,6 +249,9 @@ hframes = 6
 vframes = 8
 frame = 36
 
+[node name="Gun" parent="." instance=ExtResource("3_xpcdj")]
+position = Vector2(-1, 4)
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3.5)
 shape = SubResource("RectangleShape2D_a3d8c")
@@ -267,6 +270,3 @@ parameters/conditions/Idle = false
 parameters/conditions/Is_moving = false
 parameters/Idle/blend_position = Vector2(0.74206, 0.145055)
 parameters/Walk/blend_position = Vector2(-0.507246, 0.488341)
-
-[node name="Gun" parent="." instance=ExtResource("3_xpcdj")]
-position = Vector2(-1, 4)

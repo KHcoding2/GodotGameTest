@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://mc01y4da71r1"]
 
-[ext_resource type="Script" uid="uid://3xniisof7ics" path="res://Scenes/Gun/bullet.gd" id="1_4tjfw"]
+[ext_resource type="Script" uid="uid://3xniisof7ics" path="res://Scripts/Gun/bullet.gd" id="1_4tjfw"]
 [ext_resource type="Texture2D" uid="uid://01bbc85u2wu8" path="res://Assets/Gun/Bullet-box_1_Blue.png" id="1_5ogwn"]
 
 [node name="Bullet" type="Node2D"]

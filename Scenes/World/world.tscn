@@ -1,8 +1,43 @@
-[gd_scene load_steps=2 format=3 uid="uid://dvpkosdp1x5ff"]
+[gd_scene load_steps=3 format=3 uid="uid://dvpkosdp1x5ff"]
 
 [ext_resource type="PackedScene" uid="uid://bcpv2sdr2pyv2" path="res://Scenes/Player/player.tscn" id="1_t1gg8"]
+[ext_resource type="Script" uid="uid://d1mddxovpwjso" path="res://Scripts/World/world.gd" id="1_yp2ti"]
 
 [node name="World" type="Node2D"]
+script = ExtResource("1_yp2ti")
 
 [node name="Player" parent="." instance=ExtResource("1_t1gg8")]
 position = Vector2(107, 69)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="PlayerStats" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AmmoLabel" type="Label" parent="UI/PlayerStats"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 12.0
+offset_right = 85.0
+offset_bottom = 42.0
+scale = Vector2(0.5, 0.5)
+theme_override_font_sizes/font_size = 16
+text = "Ammo: XXXX"
+vertical_alignment = 1
+
+[node name="ReloadingLabel" type="Label" parent="UI/PlayerStats"]
+visible = false
+layout_mode = 0
+offset_left = 7.0
+offset_top = 113.0
+offset_right = 97.0
+offset_bottom = 143.0
+scale = Vector2(0.5, 0.5)
+theme_override_font_sizes/font_size = 16
+text = "Reloading..."
+vertical_alignment = 1
