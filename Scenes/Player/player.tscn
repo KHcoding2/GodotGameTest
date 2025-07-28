@@ -1,6 +1,6 @@
 [gd_scene load_steps=27 format=3 uid="uid://bcpv2sdr2pyv2"]
 
-[ext_resource type="Script" path="res://Scripts/Components/player.gd" id="1_a3d8c"]
+[ext_resource type="Script" uid="uid://nw6516cdbq14" path="res://Scripts/Components/player.gd" id="1_a3d8c"]
 [ext_resource type="Texture2D" uid="uid://bq6hjxsj4ukeo" path="res://Assets/Player/Character_Idel_Sheet.png" id="2_xpcdj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a3d8c"]
